@@ -8,9 +8,3 @@ SELECT i.InvoiceId, COUNT(i.InvoiceId) AS NumItems
 FROM InvoiceLine i
 WHERE i.InvoiceId = 37
 
-
---  More generic table...
-
-SELECT i.InvoiceId, COUNT(i.InvoiceId) AS NumItems
-FROM InvoiceLine i
-GROUP BY i.InvoiceId
