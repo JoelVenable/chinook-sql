@@ -6,9 +6,9 @@
 USE Chinook
 
 
-SELECT 
-c.FirstName, c.LastName, c.CustomerId, c.Country, 
-i.InvoiceId, i.InvoiceDate, i.BillingCountry
+SELECT
+  c.FirstName, c.LastName, c.CustomerId, c.Country,
+  i.InvoiceId, i.InvoiceDate, i.BillingCountry
 FROM Customer c
-LEFT JOIN Invoice i on c.CustomerId = i.CustomerId
+  LEFT JOIN Invoice i on c.CustomerId = i.CustomerId
 WHERE Country = 'Brazil';
